@@ -1,0 +1,35 @@
+*foreground:		#00cc00
+*foreground_bold:	#a8a19f
+
+!! Commented out line
+
+URxvt.background:	[90]#000000
+URxvt.scrollBar:	false
+!!URxvt.font:		xft:Source Code Pro Light Italic:size=12
+!!URxvt.font:		xft:Noto Sans:size=12
+!!URxvt.font:		xft:consolas:size=10
+URxvt.font:		xft:DejavuSansMono:pixelsize=16
+URxvt.letterSpace:	0
+URxvt.cursorColor:	magenta
+
+!! Extensions:
+URxvt.perl-ext-common:		default,matcher,resize-font,url-select,keyboard-select,clipboard
+URxvt.clipboard.autocopy:	true
+URxvt.colorUL:			#4682B4
+!! url-select:
+URxvt.keysym.M-u:		perl:url-select:select_next
+URxvt:url-select.launcher:	/usr/bin/firefox
+!!URxvt:url-select.underline:	true
+!! keyboard-select:
+URxvt.keysym.M-Escape:		perl:keyboard-select:activate
+!! resize-font:
+URxvt.resize-font.smaller:	C-M-j
+URxvt.resize-font.bigger:	C-M-k
+
+URxvt.keyboard-select.clipboard: true
+
+Xft.antialias:	true
+
+!! Disable annoying shit
+URxvt.iso14755:		false
+URxvt.iso14755_52:	false
