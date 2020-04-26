@@ -29,7 +29,14 @@ alias vrc="vim ~/.config/vim/vimrc"
 alias brc="vim ~/.bashrc"
 alias i3c="vim ~/.config/i3/config"
 alias dots="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias word="libreoffice --writer"
+alias excel="libreoffice --calc"
+alias powerpoint="libreoffice --impress"
+alias mubuntu="sudo mount /dev/sda5 /mnt"
+alias zom="flatpak run us.zoom.Zoom"
 
+se() { du -a ~/.local/* ~/.config/* | awk '{print $2}' | fzf | xargs -r $EDITOR ;}
+#alias se="du -a ~/.local/* ~/.config/* | awk '{print $2}' | fzf | xargs -r $EDITOR"
 
 # Adding colors
 alias ls="ls -hN --color=auto --group-directories-first"
@@ -37,6 +44,7 @@ alias ll='ls -laF --color=auto'
 alias grep="grep --color=auto"  # Color grep
 alias ccat="highlight --out-format=ansi"  # Color cat
 
+[ -f ~/.shortcuts ] && source ~/.shortcuts
 
 # If not running interactively, don't do anything
 # [[ $- != *i* ]] && return
